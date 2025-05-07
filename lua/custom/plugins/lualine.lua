@@ -20,8 +20,8 @@ return {
       },
       sections = {
         lualine_a = { 'mode' },
-        lualine_b = { 'branch' },
-        lualine_c = { 'filename', { require('gitblame').get_current_blame_text, cond = require('gitblame').is_blame_text_available } },
+        lualine_b = { 'branch', 'diff', 'diagnostics' },
+        lualine_c = { 'filename' },
         lualine_x = { 'copilot', 'encoding', 'fileformat', 'filetype' },
         lualine_y = { 'progress' },
         lualine_z = { 'location' },
