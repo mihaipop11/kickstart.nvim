@@ -14,7 +14,17 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    reveal_force_cwd = true,
     filesystem = {
+      window = {
+        mappings = {
+          ['\\'] = 'close_window',
+        },
+        position = 'float',
+      },
+    },
+    buffers = {
+      show_unloaded = true,
       window = {
         mappings = {
           ['\\'] = 'close_window',
